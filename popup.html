@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        html {
+            width: 300px;
+        }
+
+        * {
+            font-family: "Public Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 12pt;
+        }
+
+        body {
+            background-color: black;
+            color: white;
+        }
+
+        .title {
+            width: auto;
+        }
+
+        h1 {
+            display: inline-block;
+            margin-left: 12px;
+            font-size: 24px;
+        }
+
+        .copy {
+            filter: invert(1);
+            background-color: white;
+            border: 1px solid gray;
+            height: 32px;
+            width: fit-content;
+            border-radius: 16px;
+            padding: 4px;
+            display: block;
+            padding: 4px 8px;
+            margin-top: 8px;
+        }
+
+        .copy:hover {
+            background-color: rgb(200, 200, 200);
+        }
+
+        .copy:active {
+            background-color: rgb(150, 150, 150);
+        }
+    </style>
+</head>
+<body>
+    <div class="title">
+        <img src="images/icon48.png" alt="LOGO" style="width: 24px; height: 24px; align-self: center;">
+        <h1>IDAGIO Info Hider</h1>
+    </div>
+    <div style="width: fit-content;">
+        <div>
+            <input type="checkbox" id="toggle"><span> Hide performance info?</span>
+        </div>
+        <button class="copy">
+            <img src="images/copy-icon.png" alt="COPY" style="height: 16px; position: relative; top: 1px">
+            <span style="vertical-align: top;">&nbsp;Copy performer list</span>
+        </button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
